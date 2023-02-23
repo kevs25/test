@@ -1,0 +1,26 @@
+@using Microsoft.AspNetCore.Mvc;
+@using Microsoft.AspNetCore.Http;
+
+@using System.Web;
+@model Webapp.Models.LoginModel;
+
+
+@{
+    Layout ="/Views/Shared/_userLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background: rgb(129,44,106);
+background: linear-gradient(90deg, rgba(129,44,106,1) 0%, rgba(233,215,215,1) 0%, rgba(227,188,188,1) 100%);">
+    <h1>welcome user</h1>
+    <p style="color: red; margin-left: 40%;">@ViewBag.Message</p>
+    <p></p>
+</body>
+</html>
